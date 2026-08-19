@@ -3,3 +3,4 @@
 @media (max-width:430px){.language-grid,.invisible-grid,.challenge-grid,.prompt-anatomy{grid-template-columns:1fr}.route-preview{gap:.7rem}.chapter h2{font-size:2.45rem}.hero-actions .button{width:100%}}
 .prompt-anatomy{grid-template-columns:repeat(4,1fr)}
 @media (max-width:430px){.prompt-anatomy{grid-template-columns:1fr}}
+.data-panel[hidden]{display:none!important}

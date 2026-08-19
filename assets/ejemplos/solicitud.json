@@ -1,0 +1,14 @@
+{
+  "solicitud": {
+    "area": "Recursos Físicos",
+    "tipo": "compra",
+    "prioridad": "media",
+    "items": [
+      {
+        "nombre": "Silla ergonómica",
+        "cantidad": 20
+      }
+    ],
+    "fecha_limite": "2026-09-30"
+  }
+}

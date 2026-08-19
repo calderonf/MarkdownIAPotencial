@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solicitud>
+  <area>Recursos Físicos</area>
+  <tipo>compra</tipo>
+  <prioridad>media</prioridad>
+  <items>
+    <item cantidad="20">Silla ergonómica</item>
+  </items>
+  <fechaLimite>2026-09-30</fechaLimite>
+</solicitud>

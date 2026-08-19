@@ -1,0 +1,15 @@
+digraph Compra {
+  rankdir=LR;
+  graph [fontname="Arial"];
+  node [shape=box, style="rounded", fontname="Arial"];
+
+  Necesidad -> Solicitud;
+  Solicitud -> Revision;
+  Revision -> Aprobacion;
+  Aprobacion -> Cotizaciones;
+  Cotizaciones -> Seleccion;
+  Seleccion -> Orden_de_compra;
+
+  Revision -> Ajustes [label="incompleta"];
+  Ajustes -> Solicitud;
+}

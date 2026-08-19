@@ -25,7 +25,7 @@
           <p class="lead">Los modelos de IA trabajan con texto. Cuando el texto tiene estructura, las personas y la IA entienden mejor qué hacer, con qué información y cómo entregar el resultado.</p>
           <div class="hero-actions"><a class="button primary" href="#por-que">Comenzar la ruta <span>→</span></a><button class="button ghost" type="button" data-copy-target="prompt-antes-despues">Copiar ejemplo</button></div>
         </div>
-        <aside class="hero-card"><p class="card-label">La idea en una frase</p><p class="big-quote">El buen prompting no consiste en encontrar palabras mágicas: consiste en hacer visible la estructura de una buena solicitud.</p><div class="card-tags"><span>claridad</span><span>contexto</span><span>verificación</span></div></aside>
+        <aside class="hero-card"><p class="card-label">La idea en una frase</p><p class="big-quote">CREA convierte una buena intención en una instrucción clara, verificable y reutilizable.</p><div class="card-tags"><span>contexto</span><span>restricciones</span><span>estructura</span><span>acción</span></div></aside>
       </div>
       <div class="route-preview">
         <a href="#por-que"><b>01</b> Texto con intención</a><a href="#markdown"><b>02</b> Markdown</a><a href="#graficos"><b>03</b> Diagramas</a><a href="#datos"><b>04</b> Datos estructurados</a><a href="#practica"><b>05</b> Reto</a>
@@ -38,23 +38,27 @@
         <div><p>Una instrucción vaga obliga al modelo a completar vacíos. Una instrucción estructurada reduce ambigüedad, permite revisar el resultado y facilita reutilizar la solicitud.</p><div class="callout gold"><strong>Piensa en el marcado como señalización.</strong> Títulos separan temas; listas separan acciones; tablas hacen comparables los datos; etiquetas identifican campos.</div></div>
         <div class="comparison" id="prompt-antes-despues">
           <article class="bad"><p class="comparison-label">Solicitud vaga</p><p>“Resume este documento y dime qué hacer.”</p></article>
-          <article class="good"><p class="comparison-label">Solicitud estructurada</p><pre><code># Rol
-Actúa como analista de procesos.
-
-# Fuente
-Usa solo el texto entre &lt;documento&gt;.
-
-# Entregable
-- Resumen ejecutivo: máximo 120 palabras
-- Tabla: hallazgo | riesgo | acción propuesta
-- Preguntas pendientes
+          <article class="good"><p class="comparison-label">Solicitud con CREA</p><pre><code># C · Contexto y rol
+Actúa como analista de procesos. Usa solo el texto entre &lt;documento&gt;.
 
 &lt;documento&gt;
 [pegar contenido]
-&lt;/documento&gt;</code></pre></article>
+&lt;/documento&gt;
+
+# R · Restricciones y criterios
+No inventes datos. Máximo 120 palabras.
+
+# E · Estructura de salida
+- Resumen ejecutivo
+- Tabla: hallazgo | riesgo | acción propuesta
+- Preguntas pendientes
+
+# A · Acción
+Analiza el documento y prioriza las acciones.
+</code></pre></article>
         </div>
       </div>
-      <div class="question-strip"><span>Pregunta guía</span><p>¿Qué tendría que saber una persona nueva para realizar esta tarea sin preguntarte nada?</p></div>
+      <div class="question-strip"><span>Pregunta guía</span><p>¿Qué Contexto, Restricciones, Estructura y Acción necesitaría una persona nueva para realizar esta tarea sin preguntarte nada?</p></div>
     </section>
 
     <section class="chapter" id="mapa" data-title="Mapa de lenguajes">
@@ -91,29 +95,33 @@ Adquirir 20 sillas ergonómicas para la sala GOA.
 > No incluir información personal ni confidencial.</code></pre></div>
         <div class="render-panel"><div class="panel-title"><span>Así se interpreta</span><a href="https://stackedit.io/" target="_blank" rel="noopener">Abrir intérprete ↗</a></div><div class="rendered"><h1>Solicitud de compra</h1><h2>Objetivo</h2><p>Adquirir 20 sillas ergonómicas para la sala GOA.</p><h2>Criterios</h2><ul><li>Garantía mínima: 24 meses</li><li>Entrega antes del <strong>30 de septiembre</strong></li><li>Comparar al menos 3 propuestas</li></ul><table><thead><tr><th>Criterio</th><th>Peso</th></tr></thead><tbody><tr><td>Precio</td><td>40%</td></tr><tr><td>Ergonomía</td><td>35%</td></tr><tr><td>Garantía</td><td>25%</td></tr></tbody></table><blockquote>No incluir información personal ni confidencial.</blockquote></div></div>
       </div>
-      <div class="practice-box"><div><p class="eyebrow">Microtaller</p><h3>Convierte una solicitud real en una plantilla reutilizable.</h3></div><ol><li>Escribe un título que describa el resultado esperado.</li><li>Separa objetivo, contexto, criterios y formato de entrega.</li><li>Pide a tu IA que complete la plantilla sin inventar datos.</li></ol><a class="button dark" href="assets/ejemplos/prompt-administrativo.md" download>Descargar plantilla ↓</a></div>
+      <div class="practice-box"><div><p class="eyebrow">Microtaller con CREA</p><h3>Convierte una solicitud real en una plantilla reutilizable.</h3></div><ol><li>Declara el <strong>Contexto</strong> y el rol.</li><li>Escribe <strong>Restricciones</strong> y la <strong>Estructura</strong> deseada.</li><li>Cierra con una <strong>Acción</strong> concreta en verbo imperativo.</li></ol><a class="button dark" href="assets/ejemplos/prompt-administrativo.md" download>Descargar plantilla CREA ↓</a></div>
     </section>
 
-    <section class="chapter" id="prompts" data-title="Contexto y prompts">
-      <div class="chapter-heading"><p class="eyebrow">04 · 12 minutos</p><h2>El contexto también necesita límites.</h2><p>Delimitar no es complicar el prompt: es ayudar a que la IA sepa qué es instrucción, qué es evidencia y qué debe entregar.</p></div>
-      <div class="prompt-anatomy"><div class="anatomy-item"><b>01</b><h3>Rol</h3><p>Desde qué perspectiva debe trabajar.</p></div><div class="anatomy-item"><b>02</b><h3>Tarea</h3><p>Qué acción concreta debe realizar.</p></div><div class="anatomy-item"><b>03</b><h3>Contexto</h3><p>Qué información puede usar y qué no.</p></div><div class="anatomy-item"><b>04</b><h3>Criterios</h3><p>Cómo evaluar una respuesta útil.</p></div><div class="anatomy-item"><b>05</b><h3>Formato</h3><p>Cómo debe devolver el resultado.</p></div></div>
-      <div class="example-prompt"><p class="panel-title">Prompt para copiar y adaptar</p><pre id="prompt-contexto"><code>## Tarea
-Analiza el procedimiento incluido abajo.
+    <section class="chapter" id="prompts" data-title="Método CREA">
+      <div class="chapter-heading"><p class="eyebrow">04 · 12 minutos</p><h2>CREA: una plantilla breve para prompts útiles.</h2><p>Delimitar no es complicar el prompt. CREA ayuda a que la IA sepa cuál es el entorno, las reglas, el entregable y el trabajo que debe realizar.</p></div>
+      <div class="prompt-anatomy"><div class="anatomy-item"><b>C</b><h3>Contexto y rol</h3><p>Situación, antecedentes, fuentes disponibles y perspectiva de trabajo.</p></div><div class="anatomy-item"><b>R</b><h3>Restricciones</h3><p>Límites, criterios, tono, extensión y lo que no debe inventar.</p></div><div class="anatomy-item"><b>E</b><h3>Estructura de salida</h3><p>El formato verificable: tabla, lista, JSON, XML, Markdown o código.</p></div><div class="anatomy-item"><b>A</b><h3>Acción principal</h3><p>La orden concreta: analiza, redacta, extrae, compara o resume.</p></div></div>
+      <div class="example-prompt"><p class="panel-title">Prompt CREA para copiar y adaptar</p><pre id="prompt-contexto"><code>## C · Contexto y rol
+Actúa como analista de procesos. Usa solo el procedimiento incluido abajo.
 
-## Límites
+&lt;procedimiento&gt;
+[pegar aquí un documento público o previamente autorizado]
+&lt;/procedimiento&gt;
+
+## R · Restricciones y criterios
 - No inventes datos ni normas.
 - Si falta información, inclúyela en “Preguntas pendientes”.
 - No incluyas datos personales.
 
-## Salida en Markdown
+## E · Estructura de salida (Markdown)
 1. Resumen ejecutivo
 2. Pasos del proceso
 3. Riesgos o cuellos de botella
 4. Recomendaciones priorizadas
 
-&lt;procedimiento&gt;
-[pegar aquí un documento público o previamente autorizado]
-&lt;/procedimiento&gt;</code></pre><button class="button ghost" type="button" data-copy-target="prompt-contexto">Copiar prompt</button></div>
+## A · Acción
+Analiza el procedimiento y prioriza las mejoras propuestas.
+</code></pre><button class="button ghost" type="button" data-copy-target="prompt-contexto">Copiar prompt</button></div>
     </section>
 
     <section class="chapter" id="graficos" data-title="Diagramas con DOT">
@@ -134,7 +142,7 @@ Analiza el procedimiento incluido abajo.
 }</code></pre><a class="button dark" href="https://dreampuf.github.io/GraphvizOnline/" target="_blank" rel="noopener">Abrir Graphviz Online ↗</a></div>
         <div class="diagram-preview"><div>Necesidad</div><span>→</span><div>Solicitud</div><span>→</span><div>Revisión</div><span>→</span><div>Aprobación</div><span>→</span><div>Cotizaciones</div><span>→</span><div>Selección</div><span>→</span><div>Orden de compra</div><p>La herramienta convierte el texto en un diagrama. Cambiar una flecha cambia el proceso representado.</p></div>
       </div>
-      <div class="callout blue"><strong>Prompt sugerido:</strong> “Convierte este proceso en código DOT para Graphviz. Usa un nodo por paso, flechas para las transiciones y rombos para decisiones. No agregues pasos que no estén en el texto.”</div>
+      <div class="callout blue"><strong>Prompt CREA sugerido:</strong> “<strong>C:</strong> usa el proceso incluido abajo. <strong>R:</strong> no agregues pasos y usa rombos solo para decisiones. <strong>E:</strong> devuelve únicamente código DOT compatible con Graphviz. <strong>A:</strong> convierte el proceso en un diagrama.”</div>
     </section>
 
     <section class="chapter" id="datos" data-title="JSON y XML">
@@ -172,9 +180,9 @@ Analiza el procedimiento incluido abajo.
     </section>
 
     <section class="chapter challenge" id="practica" data-title="Reto final">
-      <p class="eyebrow">09 · Cierre y práctica extendida</p><h2>Tu primer activo reutilizable para trabajar con IA.</h2><p class="lead">Escoge un proceso o tarea real, sin datos sensibles. Al terminar debes tener una plantilla que puedas adaptar la próxima vez.</p>
-      <div class="challenge-grid"><label><input type="checkbox"> Elegí una tarea concreta y un resultado esperado.</label><label><input type="checkbox"> Organicé mi solicitud en Markdown.</label><label><input type="checkbox"> Delimité el contexto y declaré los límites.</label><label><input type="checkbox"> Pedí un formato de salida verificable.</label><label><input type="checkbox"> Revisé qué cambió y qué debo ajustar.</label></div>
-      <div class="challenge-actions"><a class="button primary" href="assets/ejemplos/prompt-administrativo.md" download>Descargar plantilla de trabajo ↓</a><a class="button ghost" href="guia-participante.md" download>Descargar guía del participante ↓</a></div><p class="closing">La habilidad no es saber escribir símbolos. Es saber diseñar una conversación trazable, segura y útil.</p>
+      <p class="eyebrow">09 · Cierre y práctica extendida</p><h2>Tu primer prompt CREA reutilizable.</h2><p class="lead">Escoge un proceso o tarea real, sin datos sensibles. Al terminar debes tener una plantilla CREA que puedas adaptar la próxima vez.</p>
+      <div class="challenge-grid"><label><input type="checkbox"> <strong>C</strong> · Declaré contexto, fuente y rol.</label><label><input type="checkbox"> <strong>R</strong> · Definí restricciones y criterios.</label><label><input type="checkbox"> <strong>E</strong> · Pedí una estructura verificable.</label><label><input type="checkbox"> <strong>A</strong> · Formulé una acción concreta.</label><label><input type="checkbox"> Revisé qué cambió y qué debo ajustar.</label></div>
+      <div class="challenge-actions"><a class="button primary" href="assets/ejemplos/prompt-administrativo.md" download>Descargar plantilla CREA ↓</a><a class="button ghost" href="guia-participante.md" download>Descargar guía del participante ↓</a></div><p class="closing">La habilidad no es saber escribir símbolos. Es saber diseñar una conversación CREA: trazable, segura y útil.</p>
     </section>
 
     <section class="chapter resources" id="recursos" data-title="Recursos">

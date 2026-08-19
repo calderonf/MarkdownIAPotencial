@@ -2,25 +2,22 @@
 
 ## Idea central
 
-La IA recibe texto. Al estructurar el texto, haces explícitos el objetivo, el contexto, los límites y el formato esperado. Esto mejora la trazabilidad y facilita revisar la respuesta.
+La IA recibe texto. CREA ayuda a hacer explícitos el contexto, los límites, el formato y la acción esperada. Esto mejora la trazabilidad y facilita revisar la respuesta.
 
-## Estructura mínima de un prompt reutilizable
+## CREA: estructura mínima de un prompt reutilizable
 
 \`\`\`markdown
-# Rol
-¿Desde qué perspectiva debe trabajar la IA?
+# C · Contexto y rol
+¿Cuál es la situación, qué fuentes puede usar y desde qué perspectiva debe trabajar la IA?
 
-# Tarea
-¿Qué debe hacer exactamente?
+# R · Restricciones y criterios
+¿Qué no debe inventar, usar o hacer? ¿Qué tono, extensión y criterios debe respetar?
 
-# Contexto
-¿Qué información puede usar? Delimítala con etiquetas.
+# E · Estructura de salida
+¿Qué formato debe tener la respuesta: tabla, lista, Markdown, JSON, XML o código?
 
-# Límites
-¿Qué no debe inventar, usar o hacer?
-
-# Entregable
-¿Qué formato debe tener la respuesta?
+# A · Acción principal
+¿Qué debe hacer exactamente? Usa un verbo: analiza, redacta, resume, extrae o compara.
 \`\`\`
 
 ## Cuándo usar cada formato
@@ -49,4 +46,4 @@ La IA recibe texto. Al estructurar el texto, haces explícitos el objetivo, el c
 
 ## Reto final
 
-Escoge una tarea no sensible. Crea una plantilla Markdown con rol, tarea, contexto, límites y entregable. Pruébala con una IA, revisa el resultado y ajusta una sola sección para mejorar la siguiente respuesta.
+Escoge una tarea no sensible. Crea una plantilla Markdown con CREA: Contexto y rol, Restricciones, Estructura de salida y Acción. Pruébala con una IA, revisa el resultado y ajusta una sola sección para mejorar la siguiente respuesta.

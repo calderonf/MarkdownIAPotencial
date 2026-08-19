@@ -4,7 +4,7 @@ Material autocontenido para un taller de 90 minutos dirigido a personas sin expe
 
 ## Contenido
 
-- Markdown y prompts estructurados.
+- Markdown y prompts estructurados con el mnemónico CREA: Contexto y rol, Restricciones, Estructura de salida y Acción principal.
 - Graphviz / DOT para visualizar procesos.
 - JSON y XML para salidas de datos verificables.
 - Conversión de documentos a Markdown y cuidado de privacidad.

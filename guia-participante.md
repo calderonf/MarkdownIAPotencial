@@ -41,6 +41,7 @@ La IA recibe texto. CREA ayuda a hacer explícitos el contexto, los límites, el
 - [StackEdit](https://stackedit.io/): editor de Markdown con vista previa.
 - [Dillinger](https://dillinger.io/): editor Markdown en el navegador.
 - [MDFlux](https://github.com/ibrahimqureshae/mdflux): aplicación local para Windows que convierte documentos y escaneos a Markdown sin usar terminal.
+- [MarkItDown GUI](https://github.com/imadreamerboy/markitdown-gui/): aplicación de escritorio para macOS, Windows y Linux que convierte archivos a Markdown con vista previa y opciones de OCR.
 - [Graphviz Online](https://dreampuf.github.io/GraphvizOnline/): visualizador de código DOT.
 - [XML Validation](https://www.xmlvalidation.com/): comprobación de sintaxis XML.
 - [MarkItDown](https://github.com/microsoft/markitdown): proyecto para convertir documentos a Markdown.

@@ -19,7 +19,7 @@ Abre \`index.html\` en cualquier navegador moderno. No requiere instalación ni 
 1. Crea el repositorio público \`MarkdownIAPotencial\` en la cuenta \`calderonf\`.
 2. Sube el contenido de esta carpeta a la rama \`main\`.
 3. En **Settings → Pages**, elige **Deploy from a branch**, rama \`main\` y carpeta \`/(root)\`.
-4. La dirección publicada será \`https://calderonf.github.io/MarkdownIAPotencial/\`.
+4. La dirección publicada será 	[calderonf.github.io/MarkdownIAPotencial](https://calderonf.github.io/MarkdownIAPotencial).
 
 ## Nota de privacidad
 
